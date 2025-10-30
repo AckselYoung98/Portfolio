@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  /* Brand palette provided by user */
+  --accent-primary: #C39738; /* gold */
+  --accent-secondary: #FFFF96; /* pale yellow */
+  --accent-dark: #7F4311; /* brown */
+  --accent-muted: #5E4318; /* muted brown */
+  --accent-deep: #361F00; /* deep dark */
+
+  /* App background and surface (derived for contrast and accessibility) */
+  --bg: #0b0b0c; /* near-black background to make gold pop */
+  --bg-secondary: #12100f; /* subtle secondary background */
+  --surface: #171211; /* card surface */
+
+  /* Text and borders */
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255,255,255,0.78);
+  --muted: rgba(255,255,255,0.6);
+  --border: rgba(255,255,255,0.06);
+
+  /* Shadows */
+  --shadow-strong: 0 14px 40px rgba(2,6,23,0.5);
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--text-primary);
+}

@@ -1,0 +1,94 @@
+.contact {
+  padding: 6rem 2rem;
+  background-color: transparent;
+}
+
+.contact .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-grid.single {
+  grid-template-columns: 1fr;
+}
+
+.contact-info {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.contact-info .contact-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.contact-info .contact-bio {
+  margin: 0 0 1rem 0;
+  color: var(--text-secondary);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0));
+  border-radius: 10px;
+  color: var(--text-primary);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-link svg {
+  color: var(--accent-primary);
+}
+
+.contact-link span {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.contact-link:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
+  background-color: rgba(195,151,56,0.06); /* subtle gold tint */
+}
+
+/* experience block removed by design — if you want to re-enable, restore styles here */
+
+/* small hover lift for the blocks to match Skills feel */
+.contact-info, .contact-experience {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-info:hover, .contact-experience:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(2,6,23,0.28);
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
